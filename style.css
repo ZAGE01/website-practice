@@ -1,7 +1,7 @@
 body{
     background-color: #fbffe6;
 }
-h2 {
+.custom-heading {
     color :rgb(0, 255, 238);
     -webkit-text-stroke-width: 0.6px;
     -webkit-text-stroke-color: black;
@@ -13,18 +13,18 @@ img{
     border-radius: 50%;
     border-style:solid;
     border-width: 4px;
-    border-color:rgba(0, 0, 0, 0.4);;
+    border-color:rgba(0, 0, 0, 0.4);
     margin-top: 20px;
     margin-left: 25px;
 }
-p{
+.paragraph{
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
     margin-left: 25px;
     margin-right: 25px;
 }
-li{
+.list{
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
@@ -40,4 +40,92 @@ u{
     color:rgba(0, 0, 0, 0.1);
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    font-size:1.5rem;
+    background-color: rgba(0, 255, 238, 0.3);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-link{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.nav-link:hover{
+    color:white;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+}
+
+.header {grid-area: header;}
+.menu {
+    grid-area: menu;
+    border-style:double;
+    border-width: 4px;
+    border-color: rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-align: center;
+    }
+.main {grid-area: main; }
+.footer {
+    grid-area: footer;
+    text-align: center;
+    border-style: double;
+    border-width: 4px;
+    border-color: rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem; }
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'menu header header header header header header'
+    'menu main main main main main main'
+    'footer footer footer footer footer footer footer';
+    gap: 10px;
+    padding: 1mm;
+}
+
+.menu-header{
+    color :rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu-link{
+    text-align: center;
+    margin-left: 3mm;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+}
+.menu-link:hover{
+    color:white;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+}
+
+.footer-link{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+.footer-link:hover{
+    color:white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
 }
